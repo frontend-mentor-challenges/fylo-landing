@@ -1,7 +1,25 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 /* 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif; 
- */
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif; 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+gh {
+    /* 
+    1. Less,
+    2: Bring in a preprocessing project
+    3: Open the page on TK?
+    */
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
