@@ -6,16 +6,38 @@ header {
   }
 
   .nav a {
-    color: hsl(0, 0%, 100%);
+    color: @color-white;
     font-size: 0.8rem;
     text-decoration: none;
     margin-left: 1.2rem;
     padding-bottom: 0.2rem;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid @color-white;
 
     &:hover {
       color: grey;
       border-bottom: 2px solid grey;
     }
+  }
+}
+
+.intro-cta {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 15px;
+  text-align: center;
+  
+
+  h1 {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+  }
+
+  button {
+    border: none;
+    padding: 0.5rem 4rem;
+    margin: 1rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(198, 60%, 50%);
+    border-radius: 1rem;
   }
 }

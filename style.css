@@ -8,7 +8,18 @@ body {
   color: hsl(0, 0%, 100%);
   font-size: 14px;
 }
-.intro {
+h1,
+h2 {
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.nav-intro {
   font-family: "Raleway", sans-serif;
   background-color: hsl(217, 28%, 15%);
   padding: 3.5%;
@@ -36,11 +47,33 @@ header .nav a {
   text-decoration: none;
   margin-left: 1.2rem;
   padding-bottom: 0.2rem;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid hsl(0, 0%, 100%);
 }
 header .nav a:hover {
   color: grey;
   border-bottom: 2px solid grey;
+}
+.intro-cta {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 15px;
+  text-align: center;
+}
+.intro-cta h1 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+}
+.intro-cta button {
+  border: none;
+  padding: 0.5rem 4rem;
+  margin: 1rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(198, 60%, 50%);
+  border-radius: 1rem;
+}
+.bg-curvy {
+  position: relative;
+  z-index: 1;
 }
 .attribution {
   font-size: 12px;
