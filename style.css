@@ -11,6 +11,7 @@ body {
 h1,
 h2 {
   padding-bottom: 10px;
+  font-weight: 700;
 }
 p {
   line-height: 1.5;
@@ -18,6 +19,13 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+a:hover,
+p > a:hover {
+  color: hsl(0, 0%, 100%);
+}
+button:hover {
+  cursor: pointer;
 }
 .nav-intro {
   font-family: "Raleway", sans-serif;
@@ -56,7 +64,7 @@ header .nav a:hover {
 .intro-cta {
   width: 50%;
   margin: 0 auto;
-  padding-top: 15px;
+  padding: 1em 0 1.5em;
   text-align: center;
 }
 .intro-cta h1 {
@@ -71,9 +79,42 @@ header .nav a:hover {
   background-color: hsl(198, 60%, 50%);
   border-radius: 1rem;
 }
-.bg-curvy {
-  position: relative;
-  z-index: 1;
+.features {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.features .feature {
+  width: 42.5%;
+  text-align: center;
+  padding-bottom: 5em;
+}
+.cta-demo {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cta-demo img,
+.cta-demo div {
+  width: 47.5%;
+}
+.cta-demo div h2 {
+  font-size: 2em;
+}
+.cta-demo div p {
+  padding-bottom: 1em;
+  line-height: 1.5;
+}
+.cta-demo div a {
+  color: hsl(176, 68%, 64%);
+}
+.cta-demo div a:hover {
+  color: hsl(0, 0%, 100%);
 }
 .attribution {
   font-size: 12px;

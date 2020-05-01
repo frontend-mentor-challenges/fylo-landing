@@ -4,8 +4,10 @@ body {
   font-size: 14px;
 }
 
-h1, h2 {
-    padding-bottom: 10px;
+h1,
+h2 {
+  padding-bottom: 10px;
+  font-weight: 700;
 }
 
 p {
@@ -17,6 +19,18 @@ img {
   height: auto;
 }
 
+a,
+p > a {
+  &:hover {
+    color: @color-white;
+  }
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
 .nav-intro {
   font-family: "Raleway", sans-serif;
   background-color: hsl(217, 28%, 15%);
