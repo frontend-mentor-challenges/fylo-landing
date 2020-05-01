@@ -3,18 +3,11 @@
     font-family: 'Raleway', sans-serif; 
 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-gh {
-    /* 
-    1. Less,
-    2: Bring in a preprocessing project
-    3: Open the page on TK?
-    */
-}
 
 .attribution {
   font-size: 11px;
