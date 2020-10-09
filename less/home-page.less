@@ -32,10 +32,19 @@
 
     a {
       color: hsl(176, 68%, 64%);
+      text-decoration: none;
+      padding-bottom: .2em;
+      border-bottom: 1px solid;
 
       &:hover {
         color: @color-white;
       }
+      &:after {
+        content: url("../images/icon-arrow.svg");
+        position: relative;
+        top: 2.5px;
+        left: 3px;
+      } 
     }
   }
 }
