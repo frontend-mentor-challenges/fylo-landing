@@ -125,6 +125,39 @@ header .nav a:hover {
   top: 2.5px;
   left: 3px;
 }
+.testimonials {
+  position: relative;
+  margin: 6rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials .quote-mark {
+  position: absolute;
+  top: -40px;
+  left: -10px;
+}
+.testimonials > div {
+  width: 32%;
+  padding: 1rem;
+  background-color: hsl(219, 30%, 18%);
+  z-index: 11;
+}
+.testimonials > div .text {
+  padding: 1rem 0;
+}
+.testimonials > div .name-and-image {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.testimonials > div .name-and-image img {
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.testimonials > div .name-and-image > div > p {
+  font-size: 12px;
+}
 .attribution {
   font-size: 12px;
   text-align: center;
