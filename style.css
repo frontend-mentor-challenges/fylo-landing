@@ -37,6 +37,7 @@ button:hover {
   font-family: "Open Sans", cursive;
   background-color: hsl(218, 28%, 13%);
   padding: 3.5%;
+  margin-top: -1px;
 }
 .footer {
   background-color: hsl(216, 53%, 9%);
@@ -127,7 +128,7 @@ header .nav a:hover {
 }
 .testimonials {
   position: relative;
-  margin: 6rem 0;
+  margin: 6rem 0 0;
   display: flex;
   justify-content: space-between;
 }
@@ -157,6 +158,43 @@ header .nav a:hover {
 }
 .testimonials > div .name-and-image > div > p {
   font-size: 12px;
+}
+.cta {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  top: 120px;
+  z-index: 11;
+  background: hsl(217, 28%, 15%);
+}
+.cta .cta-header {
+  font-size: 25px;
+  letter-spacing: 0.5px;
+}
+.cta .cta-text {
+  padding: 1rem;
+  width: 85%;
+  margin: auto;
+}
+.cta form {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.cta form input {
+  width: 63%;
+  border-radius: 25px;
+  border: none;
+  padding: 0.75rem;
+}
+.cta form button {
+  color: white;
+  width: 34%;
+  background-color: hsl(198, 60%, 50%);
+  border: none;
+  border-radius: 25px;
 }
 .attribution {
   font-size: 12px;
