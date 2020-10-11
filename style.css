@@ -41,6 +41,7 @@ button:hover {
 }
 .footer {
   background-color: hsl(216, 53%, 9%);
+  padding-top: 9%;
 }
 header {
   display: flex;
@@ -148,7 +149,7 @@ header .nav a:hover {
 }
 .testimonials > div .name-and-image {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 .testimonials > div .name-and-image img {
@@ -196,10 +197,24 @@ header .nav a:hover {
   border: none;
   border-radius: 25px;
 }
-.attribution {
+.footer .fylo-logo {
+  width: 9rem;
+}
+.footer .flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .attribution {
   font-size: 12px;
   text-align: center;
 }
-.attribution a {
+.footer .attribution a {
   color: hsl(228, 45%, 44%);
 }
