@@ -7,6 +7,7 @@ body {
   max-width: 1440px;
   color: hsl(0, 0%, 100%);
   font-size: 14px;
+  margin: 0 auto;
 }
 h1,
 h2 {
@@ -41,6 +42,7 @@ button:hover {
 }
 .footer {
   background-color: hsl(216, 53%, 9%);
+  padding-top: 9%;
 }
 header {
   display: flex;
@@ -148,7 +150,7 @@ header .nav a:hover {
 }
 .testimonials > div .name-and-image {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 .testimonials > div .name-and-image img {
@@ -196,10 +198,63 @@ header .nav a:hover {
   border: none;
   border-radius: 25px;
 }
-.attribution {
+.footer .fylo-logo {
+  width: 9rem;
+  margin-bottom: 1rem;
+}
+.footer .flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .contact-icon {
+  margin-right: 10px;
+  padding-top: 5px;
+}
+.footer .address {
+  width: 30%;
+}
+.footer .contact > div {
+  padding-bottom: 0.75rem;
+}
+.footer .contact a,
+.footer nav > a {
+  color: white;
+  text-decoration: none;
+}
+.footer .contact a:hover,
+.footer nav > a:hover,
+.footer .contact a:focus,
+.footer nav > a:focus,
+.footer .contact a:active,
+.footer nav > a:active {
+  color: hsl(228, 45%, 44%);
+  text-decoration: underline;
+}
+.footer nav > a {
+  padding-bottom: 0.75rem;
+}
+.footer ion-icon {
+  font-size: 24px;
+  padding-left: 5px;
+}
+.footer .attribution {
   font-size: 12px;
+  margin-top: 10px;
   text-align: center;
 }
-.attribution a {
+.footer .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.footer .attribution a:hover,
+.footer .attribution a:focus,
+.footer .attribution a:active {
+  color: white;
+  font-size: 12.25px;
 }
