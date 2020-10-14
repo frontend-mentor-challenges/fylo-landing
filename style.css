@@ -203,6 +203,22 @@ button:hover {
 .testimonials > div .name-and-image > div > p {
   font-size: 12px;
 }
+@media screen and (max-width: 420px) {
+  .testimonials > div {
+    width: auto;
+    margin: 1.5rem 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  .testimonials {
+    display: block;
+    width: 95%;
+    margin: 6rem auto 0;
+  }
+  .testimonials .quote-mark {
+    top: -33px;
+  }
+}
 .cta {
   position: relative;
   width: 70%;
@@ -239,6 +255,26 @@ button:hover {
   background-color: hsl(198, 60%, 50%);
   border: none;
   border-radius: 25px;
+}
+@media screen and (max-width: 420px) {
+  .cta {
+    width: auto;
+  }
+  .cta .cta-text {
+    width: auto;
+  }
+  .cta form {
+    display: block;
+  }
+  .cta form input,
+  .cta form button {
+    display: block;
+    width: 100%;
+    padding: 0.85rem;
+  }
+  .cta form button {
+    margin-top: 1rem;
+  }
 }
 .footer .fylo-logo {
   width: 9rem;
