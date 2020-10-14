@@ -8,6 +8,19 @@
     width: 42.5%;
     text-align: center;
     padding-bottom: 5em;
+
+    h3 {
+      padding-top: 0.75rem;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    display: block;
+    width: 95%;
+
+    .feature {
+      width: 100%;
+    }
   }
 }
 
@@ -19,6 +32,10 @@
   img,
   div {
     width: 47.5%;
+
+    @media screen and (max-width: 420px) {
+      width: auto;
+    }
   }
   div {
     h2 {
@@ -46,6 +63,14 @@
         left: 3px;
       }
     }
+
+    @media screen and (max-width: 420px) {
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    display: block;
   }
 }
 

@@ -4,49 +4,56 @@
   background-repeat: no-repeat;
   background-size: auto;
 
+  header {
+    #flexbox-mixin.flex-row(@horizontal:space-between);
 
-header {
-  #flexbox-mixin.flex-row(@horizontal:space-between);
+    img {
+      width: 6rem;
+    }
 
-  img {
-    width: 6rem;
+    .nav a {
+      color: @color-white;
+      font-size: 0.8rem;
+      text-decoration: none;
+      margin-left: 1.2rem;
+      padding-bottom: 0.2rem;
+      border-bottom: 2px solid @color-white;
+
+      &:hover {
+        color: grey;
+        border-bottom: 2px solid grey;
+      }
+    }
   }
 
-  .nav a {
-    color: @color-white;
-    font-size: 0.8rem;
-    text-decoration: none;
-    margin-left: 1.2rem;
-    padding-bottom: 0.2rem;
-    border-bottom: 2px solid @color-white;
+  .intro-cta {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em 0 1.5em;
+    text-align: center;
 
-    &:hover {
-      color: grey;
-      border-bottom: 2px solid grey;
+    h1 {
+      font-size: 2rem;
+      padding: 1.5rem 0;
+    }
+
+    button {
+      border: none;
+      padding: 0.5rem 4rem;
+      margin: 1rem;
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(176, 68%, 64%);
+      border-radius: 1rem;
     }
   }
 }
 
-.intro-cta {
-  width: 50%;
-  margin: 0 auto;
-  padding: 1em 0 1.5em;
-  text-align: center;
-  
-
-  h1 {
-    font-size: 2rem;
-    padding: 1.5rem 0;
+@media screen and (max-width: 420px) {
+  .nav-intro {
+    background-image: url("../images/bg-curvy-mobile.svg");
+    
+    .intro-cta {
+      width: 95%;
+    }
   }
-
-  button {
-    border: none;
-    padding: 0.5rem 4rem;
-    margin: 1rem;
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(198, 60%, 50%);
-    border-radius: 1rem;
-  }
-}
-
 }

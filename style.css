@@ -85,8 +85,16 @@ button:hover {
   padding: 0.5rem 4rem;
   margin: 1rem;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(198, 60%, 50%);
+  background-color: hsl(176, 68%, 64%);
   border-radius: 1rem;
+}
+@media screen and (max-width: 420px) {
+  .nav-intro {
+    background-image: url("../images/bg-curvy-mobile.svg");
+  }
+  .nav-intro .intro-cta {
+    width: 95%;
+  }
 }
 .features {
   width: 65%;
@@ -101,6 +109,18 @@ button:hover {
   text-align: center;
   padding-bottom: 5em;
 }
+.features .feature h3 {
+  padding-top: 0.75rem;
+}
+@media screen and (max-width: 420px) {
+  .features {
+    display: block;
+    width: 95%;
+  }
+  .features .feature {
+    width: 100%;
+  }
+}
 .cta-demo {
   width: 95%;
   margin: auto;
@@ -111,6 +131,12 @@ button:hover {
 .cta-demo img,
 .cta-demo div {
   width: 47.5%;
+}
+@media screen and (max-width: 420px) {
+  .cta-demo img,
+  .cta-demo div {
+    width: auto;
+  }
 }
 .cta-demo div h2 {
   font-size: 2em;
@@ -133,6 +159,16 @@ button:hover {
   position: relative;
   top: 2.5px;
   left: 3px;
+}
+@media screen and (max-width: 420px) {
+  .cta-demo div {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .cta-demo {
+    display: block;
+  }
 }
 .testimonials {
   position: relative;
