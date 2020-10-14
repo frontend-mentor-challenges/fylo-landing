@@ -44,15 +44,21 @@ button:hover {
   background-color: hsl(216, 53%, 9%);
   padding-top: 9%;
 }
-header {
+.nav-intro {
+  background-image: url("../images/bg-curvy-desktop.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.nav-intro header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header img {
+.nav-intro header img {
   width: 6rem;
 }
-header .nav a {
+.nav-intro header .nav a {
   color: hsl(0, 0%, 100%);
   font-size: 0.8rem;
   text-decoration: none;
@@ -60,21 +66,21 @@ header .nav a {
   padding-bottom: 0.2rem;
   border-bottom: 2px solid hsl(0, 0%, 100%);
 }
-header .nav a:hover {
+.nav-intro header .nav a:hover {
   color: grey;
   border-bottom: 2px solid grey;
 }
-.intro-cta {
+.nav-intro .intro-cta {
   width: 50%;
   margin: 0 auto;
   padding: 1em 0 1.5em;
   text-align: center;
 }
-.intro-cta h1 {
+.nav-intro .intro-cta h1 {
   font-size: 2rem;
   padding: 1.5rem 0;
 }
-.intro-cta button {
+.nav-intro .intro-cta button {
   border: none;
   padding: 0.5rem 4rem;
   margin: 1rem;
@@ -220,7 +226,8 @@ header .nav a:hover {
 .footer .address {
   width: 30%;
 }
-.footer .contact > div {
+.footer .contact > div,
+.footer nav > a {
   padding-bottom: 0.75rem;
 }
 .footer .contact a,
@@ -236,9 +243,6 @@ header .nav a:hover {
 .footer nav > a:active {
   color: hsl(228, 45%, 44%);
   text-decoration: underline;
-}
-.footer nav > a {
-  padding-bottom: 0.75rem;
 }
 .footer ion-icon {
   font-size: 24px;
