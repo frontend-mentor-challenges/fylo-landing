@@ -8,6 +8,19 @@
     width: 42.5%;
     text-align: center;
     padding-bottom: 5em;
+
+    h3 {
+      padding-top: 0.75rem;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    display: block;
+    width: 95%;
+
+    .feature {
+      width: 100%;
+    }
   }
 }
 
@@ -19,6 +32,10 @@
   img,
   div {
     width: 47.5%;
+
+    @media screen and (max-width: 420px) {
+      width: auto;
+    }
   }
   div {
     h2 {
@@ -46,6 +63,14 @@
         left: 3px;
       }
     }
+
+    @media screen and (max-width: 420px) {
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    display: block;
   }
 }
 
@@ -83,6 +108,21 @@
       & > div > p {
         font-size: 12px;
       }
+    }
+
+    @media screen and (max-width: 420px) {
+      width: auto;
+      margin: 1.5rem 0;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    display: block;
+    width: 95%;
+    margin: 6rem auto 0;
+
+    .quote-mark {
+      top: -33px;
     }
   }
 }
@@ -126,6 +166,28 @@
       background-color: hsl(198, 60%, 50%);
       border: none;
       border-radius: 25px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    width: auto;
+
+    .cta-text {
+      width: auto;
+    }
+
+    form {
+      display: block;
+
+      input, button {
+        display: block;
+        width: 100%;
+        padding: 0.85rem;
+      }
+
+      button {
+        margin-top: 1rem;
+      }
     }
   }
 }
